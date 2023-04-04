@@ -8,7 +8,7 @@ import tensorflow_hub as hub
 from flask import Flask, jsonify, request
 
 # Cargar modelo
-modelo = tf.keras.models.load_model('modelo_transfer_learning.h5', custom_objects={'KerasLayer': hub.KerasLayer})
+modelo = tf.keras.models.load_model('model/modelo_transfer_learning.h5', custom_objects={'KerasLayer': hub.KerasLayer})
 
 # Crear instancia de Flask
 app = Flask(__name__)

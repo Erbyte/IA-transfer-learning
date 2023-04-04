@@ -50,7 +50,7 @@ epochs = 50
 historial = modelo.fit(data_gen_entrenamiento, epochs=epochs, batch_size=32, validation_data=data_gen_pruebas)
 
 # Exportar modelo en formato h5
-modelo.save('modelo_transfer_learning.h5')
+modelo.save('model/modelo_transfer_learning.h5')
 
 # Exportar con tensorflow JS para web (terminal)
 # tensorflowjs_converter --input_format keras modelo.h5 carpeta_salida
